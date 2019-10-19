@@ -3,11 +3,12 @@ let humanAge;
 if (number <= 0) {
   humanAge = "not born yet";
 }
-if (number < 1 && number > 0) {
+  if (number < 1 && number > 0) {
   humanAge = "just a wee un";
 }
 if (number >= 1) {
-  humanAge = number;};
+    humanAge = number;
+  }
 
   let catAge;
   if (number <= 0) {
