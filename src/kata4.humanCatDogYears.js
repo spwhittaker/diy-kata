@@ -1,12 +1,12 @@
 const humanCatDogYears = number => {
-let humanAge;
-if (number <= 0) {
-  humanAge = "not born yet";
-}
+  let humanAge;
+  if (number <= 0) {
+    humanAge = "not born yet";
+  }
   if (number < 1 && number > 0) {
-  humanAge = "just a wee un";
-}
-if (number >= 1) {
+    humanAge = "just a wee un";
+  }
+  if (number >= 1) {
     humanAge = number;
   }
 
@@ -20,6 +20,9 @@ if (number >= 1) {
   if (number === 1) {
     catAge = 15;
   }
+  if (number > 1 && number < 2) {
+    catAge = 15 + (number - 1) * 9;
+  }
   if (number === 2) {
     catAge = 24;
   }
@@ -32,10 +35,13 @@ if (number >= 1) {
     dogAge = "not born yet";
   }
   if (number < 1 && number > 0) {
-    catAge = "just a wee un";
+    dogAge = "just a wee un";
   }
   if (number === 1) {
     dogAge = 15;
+  }
+  if (number > 1 && number < 2) {
+    dogAge = 15 + (number - 1) * 9;
   }
   if (number === 2) {
     dogAge = 24;
@@ -46,4 +52,3 @@ if (number >= 1) {
   return [humanAge, catAge, dogAge];
 };
 module.exports = humanCatDogYears;
-
